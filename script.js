@@ -43,6 +43,14 @@ const questions = [
     example: "Example: 15 Sha'ban equivalent or a regular Gregorian date for reminder purposes.",
   },
   {
+    id: "countryCode",
+    type: "country",
+    title: "What is your country of residence?",
+    description:
+      "We use this to apply your local currency and estimate nisab from live metal prices in that currency.",
+    example: "Example: If you choose Pakistan, the app will present values in PKR.",
+  },
+  {
     id: "cash",
     type: "number",
     title: "How much cash and bank balance do you currently have?",

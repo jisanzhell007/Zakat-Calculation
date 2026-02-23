@@ -6,8 +6,7 @@ A guided web app to help anyone estimate Zakat through a question-by-question fl
 
 - Intro screen with Islamic context text.
 - Step-by-step guided questions with explanations and examples.
-- Zakat timing preference (Ramadan/Eid periods, start of year, Eid al-Adha, or specific date).
-- Summary screen with editable numeric inputs and instant recalculation.
+
 
 ## Run locally
 

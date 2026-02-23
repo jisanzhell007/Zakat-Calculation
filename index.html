@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zakat Calculator Wizard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card" id="wizard">
+        <header class="header">
+          <h1>Zakat Calculator</h1>
+          <p class="subtitle">A guided flow to estimate your annual Zakat.</p>
+        </header>
+
+        <section id="intro-screen" class="screen active" aria-labelledby="intro-title">
+          <h2 id="intro-title">Calculate Your Zakat with Confidence</h2>
+          <p>
+            Rooted in the Quran (e.g., Al-Baqarah 2:110, At-Tawbah 9:103) and Sunnah—including
+            Sahih Bukhari's Zakat rulings and prophetic rates (2.5% on 85g gold/595g silver nisab,
+            per Abu Dawud 1572)—this tool follows classical fiqh for accurate, madhab-aware
+            calculations. Purify your wealth today.
+          </p>
+          <button id="start-btn" type="button">Start Guided Questions</button>
+        </section>
+
+        <section id="question-screen" class="screen" aria-live="polite">
+          <div class="progress-wrap">
+            <p id="progress-text">Question 1 of 8</p>
+            <div class="progress"><span id="progress-bar"></span></div>
+          </div>
+
+          <h2 id="question-title"></h2>
+          <p id="question-description"></p>
+          <p id="question-example" class="example"></p>
+
+          <div id="input-wrap"></div>
+
+          <div class="actions">
+            <button id="back-btn" type="button" class="secondary">Back</button>
+            <button id="next-btn" type="button">Next</button>
+          </div>
+        </section>
+
+        <section id="summary-screen" class="screen" aria-live="polite">
+          <h2>Your Zakat Summary</h2>
+          <p class="summary-note">You can update any value below and recalculate instantly.</p>
+
+          <div id="summary-grid" class="summary-grid"></div>
+
+          <article id="result-box" class="result"></article>
+
+          <div class="actions">
+            <button id="edit-flow-btn" type="button" class="secondary">Back to Questions</button>
+            <button id="recalculate-btn" type="button">Recalculate</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
